@@ -26,3 +26,15 @@ content:
         fields:
           - { name: url, label: URL, type: image }
       - { name: body, label: Body, type: rich-text }
+  - name: author
+    path: _author.md
+    type: file
+    label: Author
+    options:
+      values:
+      - value: bob
+        label: Bob Smith
+      - value: patricia
+        label: Patricia Wills
+      - value: alice
+        label: Alice Brown
