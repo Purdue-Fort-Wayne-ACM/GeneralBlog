@@ -41,4 +41,9 @@ content:
             label: Patricia Wills
           - value: alice
             label: Alice Brown
+      - name: contact
+        label: Contact information
+        type: object
+        
           
+                  
