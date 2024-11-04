@@ -44,6 +44,15 @@ content:
       - name: contact
         label: Contact information
         type: object
-        
+        fields:
+          - name: first_name
+            type: string
+          - name: last_name
+            type: string
+          - name: email
+            type: string
+          - name: phone
+            type: string
+          
           
                   
