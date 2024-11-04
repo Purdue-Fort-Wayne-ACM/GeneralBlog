@@ -30,11 +30,15 @@ content:
     path: _author.md
     type: file
     label: Author
-    options:
-      values:
-      - value: bob
-        label: Bob Smith
-      - value: patricia
-        label: Patricia Wills
-      - value: alice
-        label: Alice Brown
+    fields:
+      - name: authorname
+        type: select
+        options:
+          values:
+          - value: bob
+            label: Bob Smith
+          - value: patricia
+            label: Patricia Wills
+          - value: alice
+            label: Alice Brown
+          
