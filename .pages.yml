@@ -53,6 +53,6 @@ content:
             type: string
           - name: phone
             type: string
-          
+          - { name: sightings, label: Sightings, type: image, list: true }
           
                   
