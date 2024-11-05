@@ -55,6 +55,20 @@ content:
           - name: phone
             type: string
           - { name: sightings, label: Sightings, type: image, list: true }
-          - { name: tags, label: Tags, type: object, list: true }
-          
-                  
+          - { name: tags, label: Tags, type: string, list: true }
+  - name: module
+    path: _module.md
+    type: file
+    label: Module
+    fields:
+      - name: module_name
+        type: string
+      - name: module_sections
+        label: Module Sections
+        type: object
+        list: true
+        fields:
+          - name: module_name
+            type: string
+          - name: module_page 
+            type: rich-text
