@@ -83,3 +83,18 @@ content:
             type: string
           - name: module_page 
             type: rich-text
+  - name: resources
+    path: _resources.md
+    label: Resources
+    type: file
+    fields:
+      - name: resource_blocks
+        label: Resource Blocks
+        type: object
+        list: true
+        fields:
+          - name: block_name
+            type: string
+          - name: resources
+            type: string
+            list: true
