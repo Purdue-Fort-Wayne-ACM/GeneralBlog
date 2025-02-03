@@ -1,5 +1,6 @@
 ---
 module:
+  date: 2025-02-04T05:04:00.000Z
   module_name: Overview
   module_instructors:
     - Test Instructor
