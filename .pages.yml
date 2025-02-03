@@ -61,7 +61,7 @@ content:
     type: collection
     path: _modules
     view:
-      fields: [ module_name, description, date ]
+      fields: [ module_name, date ]
     fields:
       - name: module
         type: object
