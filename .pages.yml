@@ -68,19 +68,24 @@ content:
         label: Module
         fields:
           - { name: date, label: Date, type: date, options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" } }
-          - name: module_name
-            label: Module Name
+          - {name: module_name,
+            required: true,
+            label: Module Name,
             type: string
+            }
+            
           - name: module_instructors
             label: Instructors
             type: string
             list: true
-          - name: description
-            label: Description
-            type: string
+          - {name: description,
+            required: true,
+            label: Description,
+            type: string,
             options:
               minlength: 0
               maxlength: 250
+            }
           - name: module_sections
             label: Module Sections
             type: object
