@@ -82,10 +82,10 @@ content:
             required: true,
             label: Description,
             type: string,
-            options:
-              minlength: 0
+            options: {
+              minlength: 0,
               maxlength: 250
-            }
+            }}
           - name: module_sections
             label: Module Sections
             type: object
