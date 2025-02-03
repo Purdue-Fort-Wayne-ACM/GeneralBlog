@@ -57,7 +57,7 @@ content:
           - { name: sightings, label: Sightings, type: image, list: true }
           - { name: tags, label: Tags, type: string, list: true }
   - name: modules
-    label: Posts
+    label: Modules
     type: collection
     path: _modules
     view:
@@ -89,6 +89,34 @@ content:
                 type: string
               - name: module_page 
                 type: rich-text
+  - name: module
+    type: file
+    path: _module.md
+    label: Module
+    fields:
+      - name: module_name
+        label: Module Name
+        type: string
+      - name: module_instructors
+        label: Instructors
+        type: string
+        list: true
+      - name: description
+        label: Description
+        type: string
+        options:
+          minlength: 0
+          maxlength: 250
+      - name: module_sections
+        label: Module Sections
+        type: object
+        list: true
+        fields:
+          - name: module_name
+            type: string
+          - name: module_page 
+            type: rich-text
+          
   - name: resources
     path: _resources.md
     label: Resources
