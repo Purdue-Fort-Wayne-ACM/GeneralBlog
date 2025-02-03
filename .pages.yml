@@ -63,10 +63,6 @@ content:
     view:
       fields: [ module_name, date ]
     fields:
-      - name: module
-        type: object
-        label: Module
-        fields:
           - { name: date, label: Date, type: date, options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" } }
           - {name: module_name,
             required: true,
@@ -86,15 +82,19 @@ content:
               minlength: 0,
               maxlength: 250
             }}
-          - name: module_sections
-            label: Module Sections
+          - name: module
             type: object
-            list: true
+            label: Module
             fields:
-              - name: module_name
-                type: string
-              - name: module_page 
-                type: rich-text
+              - name: module_sections
+                label: Module Sections
+                type: object
+                list: true
+                fields:
+                  - name: module_name
+                    type: string
+                  - name: module_page 
+                    type: rich-text
   - name: module
     type: file
     path: _module.md
