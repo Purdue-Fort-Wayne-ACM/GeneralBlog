@@ -61,7 +61,7 @@ content:
     type: collection
     path: _modules
     view:
-      fields: [ module_name, date ]
+      fields: [ module_name, description, date ]
     fields:
           - { name: date, label: Date, type: date, options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" } }
           - {name: module_name,
